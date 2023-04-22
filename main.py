@@ -1,7 +1,7 @@
 from scratchclient import ScratchSession
 from time import sleep
 from random import randint
-session = ScratchSession("Iegend-", process.env.PASSWORD)
+session = ScratchSession("Iegend-", "kitloin")
 connection = session.create_cloud_connection(612229554)
 while True:
     connection.set_cloud_variable("CLOUD1", randint(0,9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999))
